@@ -7,8 +7,6 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
-theme = "terminimal"
-
 title = "Zafer Goksu"
 
 taxonomies = [{ name = "tags" }]
@@ -31,8 +29,5 @@ menu_items = [
 ]
 
 page_titles = "combined"
-
-enable_post_view_navigation = true
-post_view_navigation_prompt = "Read more"
 
 copyright_html = "&copy; Zafer Goksu"
