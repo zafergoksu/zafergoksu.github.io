@@ -20,8 +20,10 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
-      - name: 'checkout'
+      - name: 'checkout repo'
         uses: actions/checkout@v3.0.0
+      - run: git config --system --add safe.directory /github/workspace
+
       - name: 'build and deploy'
         uses: shalzz/zola-deploy-action@v0.16.1
         env:
